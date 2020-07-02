@@ -6,10 +6,6 @@
     font-style: normal;
 }
 
-div {
-    font-family: 'fira_sansregular';
-}
-
 body {
     background-image: url('../img/bg_1.png'),
                         url('../img/bg_2.png');
