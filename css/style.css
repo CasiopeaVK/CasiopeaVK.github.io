@@ -281,7 +281,7 @@ header nav {
 .review_item .description {
     position: relative;
     padding-top: 15px;
-    padding-left: 25px;
+    padding-left: 30px;
     font-style: normal;
     font-weight: 300;
     font-size: 10px;
@@ -323,7 +323,7 @@ header nav {
     text-align: center;
 }
 
-@media (max-width: 994px) {
+@media (max-width: 995px) {
 
     .product {
         padding-top: 110px;
@@ -375,7 +375,7 @@ header nav {
 
 @media (max-width: 770px) {
     .review_item {
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
 
     .potential img {
