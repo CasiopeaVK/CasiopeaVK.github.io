@@ -112,7 +112,7 @@ header nav {
   }
 
   .product .hidden_block {
-      display: none;
+      display: none !important;
   }
 
   .product .description {
@@ -236,7 +236,7 @@ header nav {
     width: 75%;
 }
 
-.guide .hiden_block {
+.guide .hidden_block {
     display: none;
 }
 
@@ -397,7 +397,7 @@ header nav {
     }
 
     .product .hidden_block {
-        display: block;
+        display: block !important;
         text-align: center;
     }
 
