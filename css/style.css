@@ -1,0 +1,442 @@
+@font-face {
+    font-family: 'fira_sansregular';
+    src: url('../fonts/firasans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/firasans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+div {
+    font-family: 'fira_sansregular';
+}
+
+body {
+    background-image: url('../img/bg_1.png'),
+                        url('../img/bg_2.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px, 
+                        right 0px top 0px;
+}
+
+header {
+    position: relative;
+}
+
+header nav {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    opacity: 70%; 
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    color: black
+}
+
+.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: flex-end;
+    padding: 22px 70px;
+    vertical-align: middle;
+    list-style-type: none;
+}
+
+.menu_item {
+    position: relative;
+    align-items: center;
+    font-family: 'fira_sansregular';
+    font-size: 14px;    
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.menu .menu_link {
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.hover-underline {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+.hover-underline,
+.hover-underline:focus,
+.hover-underline:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hover-underline::after {
+    content: "";
+    position: absolute;
+  }
+
+.menu_item .hover-underline::after {
+    top: 100%;
+    height: 2px !important;
+    width: 00%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+      transition: 0.4s ease-out all .1s;
+  }
+  
+  .menu_item:hover .hover-underline::after {
+    width: 90%;
+    left: 5%;
+      transition: 0.5s ease all;
+  }
+
+  .product {
+      padding-top: 130px;
+  }
+
+  .product .block_header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 54px;
+    color: #3C4152;
+    text-shadow: 0px 4px 12px rgba(60, 65, 82, 0.25);
+  }
+
+  .product .hidden_block {
+      display: none;
+  }
+
+  .product .description {
+    display: block;
+    margin-top: 60px;
+    padding-right: 34px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: #3C4152;
+  }
+
+  .product img {
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  .product .buttons_layout {
+      margin-top: 40px;
+  }
+
+  .product .buttons_layout img {
+      width: 30%;
+      margin-right: 3%;
+  }
+
+  .product .hidden_buttons {
+      display: none;
+      justify-content: space-around;
+  }
+
+  .product .hidden_buttons img {
+      width: 100%;
+  }
+
+  .potential { 
+    background-image: url('../img/bg_gradient.png') ;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: left 0px bottom 0px
+  }
+
+  .potential .header {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+.potential img {
+    display: block;
+    margin: 0 auto;
+}
+
+.potential .description {
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    width: 175px;
+    height: 53px;
+    background: #FFAA8E;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 4px 12px rgba(60, 65, 82, 0.25);
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btn_holder { 
+    display: flex;
+    align-items: center;
+    margin: 60px;
+}
+
+
+.guide .background {
+    position: absolute;
+    width: 50%;
+    z-index: 1;
+}
+
+.guide h1 {
+    font-family: 'fira_sansregular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.guide h4 {
+    font-family: 'fira_sansregular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.guide .container img {
+    width: 100%;
+}
+
+.guide .description {
+    width: 75%;
+}
+
+.guide .hiden_block {
+    display: none;
+}
+
+.reviews {
+    padding-top: 130px;
+    background-image: url('../img/bg_4.png'),
+                        url('../img/reviews_bg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom -100px, 0px 0px;
+    background-size: auto auto, 100% auto;
+}
+
+.reviews .hidden_block {
+    display: none;
+}
+
+.review_item {
+    position: relative;
+    height: 150px;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 130px;
+}
+
+.review_item .avatar {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 50%;
+    width: 90px;
+    z-index: 1;
+}
+
+.review_item .cloud {
+    position: absolute;
+    
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+
+.review_item .description {
+    position: relative;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;  
+    width: 220px;
+    z-index: 3;
+}
+
+.review_item .description span {
+    position: relative;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    z-index: 3;
+}
+
+.reviews .block_header {
+    display: block;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    text-shadow: 0px 4px 12px rgba(60, 65, 82, 0.25);
+    margin: 0 auto;
+}
+
+.reviews .main_description {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+}
+
+@media (max-width: 994px) {
+
+    .product {
+        padding-top: 110px;
+    }
+
+    .product .buttons_layout img {
+        display: none;
+    }
+
+    .product .hidden_buttons {
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .product .block_header {
+        font-size: 35px;
+    }
+
+    .product .description {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    .potential .header {
+        margin-bottom: 50px;
+    }
+
+    .guide .hidden_block {
+        display: flex;
+    }
+
+    .guide .active_block {
+        display: none;
+    }
+
+    .guide .description {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .reviews .active_block {
+        display: none;
+    }
+
+    .reviews .hidden_block {
+        display: flex;
+    }
+}
+
+@media (max-width: 770px) {
+    .review_item {
+        margin-bottom: 50px;
+    }
+
+    .potential img {
+        display: inline;
+        float: left;
+    }
+
+    .potential .description {
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    .product {
+        padding-top: 70px;
+    }
+
+    .product .active_block {
+        display: none;
+    }
+
+    .product .hidden_block {
+        display: block;
+        text-align: center;
+    }
+
+    .product .description {
+        margin-top: 0px;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .product .hidden_buttons {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .potential .header {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .potential .description {
+        font-size: 14px;
+    }
+
+    .potential .btn_holder {
+        margin: 30px;
+    }
+
+    .guide h1 {
+        font-size: 26px;
+    }
+
+    .guide .description {
+        font-size: 14px;
+    }
+
+    .reviews {
+        padding-top: 80px;
+    }
+}
+
