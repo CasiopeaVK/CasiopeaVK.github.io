@@ -1,9 +1,11 @@
 @font-face {
     font-family: 'fira_sansregular';
     src: url('../fonts/firasans-regular-webfont.woff2') format('woff2'),
-         url('../fonts/firasans-regular-webfont.woff') format('woff');
+         url('../fonts/firasans-regular-webfont.woff') format('woff'),
+         url('../fonts/firasans-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+
 }
 
 body {
@@ -12,6 +14,8 @@ body {
     background-repeat: no-repeat;
     background-position: 0px 0px, 
                         right 0px top 0px;
+    -webkit-font-feature-settings: "kern" 1;
+    text-rendering:optimizeLegibility;
 }
 
 header {
@@ -266,8 +270,9 @@ button:focus {
 
 .review_item {
     position: relative;
-    height: 150px;
+    height: 16  0px;
     width: 300px;
+    height: 160px;
     margin: 0 auto;
     margin-bottom: 130px;
 }
@@ -277,7 +282,7 @@ button:focus {
     right: 0px;
     bottom: 0px;
     border-radius: 50%;
-    width: 90px;
+    width: 80px;
     z-index: 1;
 }
 
@@ -451,7 +456,7 @@ button:focus {
     }
 
     .conv_btn {
-        width: 150px;
+        width: 170px;
         height: 55px;
         font-size: 14px;
     }
